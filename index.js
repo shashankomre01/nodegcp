@@ -6,9 +6,9 @@ var app = express()
 app.get('/', function (req, res) {
   var con = mysql.createConnection({
     host: "127.0.0.1",
-    port: 3306,
-    user: "root",
-    password: "123"
+    port: 6033,
+    user: "user",
+    password: "password"
   });
   con.connect(function(err) {
     if (err) {
